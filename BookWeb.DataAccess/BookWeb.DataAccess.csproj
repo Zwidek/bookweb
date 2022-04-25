@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookWeb.Models\BookWeb.Models.csproj" />
+    <ProjectReference Include="..\BookWeb.Utility\BookWeb.Utility.csproj" />
   </ItemGroup>
 
 </Project>

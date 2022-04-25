@@ -1,5 +1,4 @@
-﻿
-using BookWeb.Models;
+﻿using BookWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using BookWeb.Models.ViewModels;
