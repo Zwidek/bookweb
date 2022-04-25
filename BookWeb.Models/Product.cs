@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookWeb.Models
 {
@@ -21,24 +17,33 @@ namespace BookWeb.Models
         public string Author { get; set; }
         [Required]
         [Range(1,10000)]
+        [Display(Name = "Price for 1-50")]
         public double Price { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name = "Price for 51-100")]
         public double Price50 { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name = "List price")]
         public double ListPrice { get; set; }
         [Required]
         [Range(1, 10000)]
+        [Display(Name = "Price for 100+")]
         public double Price100 { get; set; }
         public string ImageUrl { get; set; }
         [Required]
+        [Display(Name ="Category")]
         public int CategoryId { get; set; }
+
+        [ValidateNever]
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
         [Required]
         public int CoverTypeId { get; set; }
+        [ValidateNever]
         [ForeignKey("CoverTypeId")]
+        [Display(Name ="Cover Type")]
         public CoverType CoverType { get; set; }
 
 

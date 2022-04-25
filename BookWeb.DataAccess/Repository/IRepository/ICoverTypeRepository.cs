@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookWeb.DataAccess.Repository.IRepository
 {
-    public interface ICoverTypeRepository : IRepository<Category>
+    public interface ICoverTypeRepository : IRepository<CoverType>
     {
         void Update(CoverType obj);
      

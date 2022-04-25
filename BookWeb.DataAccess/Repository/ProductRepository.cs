@@ -21,19 +21,19 @@ namespace BookWeb.DataAccess.Repository
         public void Update(Product obj)
         {
             var objFromDb = _db.Products.FirstOrDefault(x => x.Id == obj.Id);
-            if(objFromDb == null)
+            if(objFromDb != null)
             {
                 objFromDb.Title = obj.Title;
-                objFromDb.Description = obj.Description;
-                objFromDb.Author = obj.Author;
                 objFromDb.ISBN = obj.ISBN;
                 objFromDb.Price = obj.Price;
                 objFromDb.Price50 = obj.Price50;
-                objFromDb.Price100 = obj.Price100;
                 objFromDb.ListPrice = obj.ListPrice;
+                objFromDb.Price100 = obj.Price100;
+                objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
-                objFromDb.CoverTypeId = obj.CoverTypeId;    
-                if(obj.ImageUrl != null)
+                objFromDb.Author = obj.Author;
+                objFromDb.CoverTypeId = obj.CoverTypeId;
+                if (obj.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = obj.ImageUrl; 
                 }
