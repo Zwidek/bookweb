@@ -1,5 +1,7 @@
 ﻿@using System.Globalization
+@using BookWeb.Utility
 @model BookWeb.Models.ShoppingCart
+
 
 <form method="post">
     <input hidden asp-for="ProductId"/>
@@ -73,9 +75,12 @@
                     <div class="col-12 col-md-6 pb-1">
                         <a class="btn btn-success form-control " style="height:50px;" asp-action="Index" >Back to Home</a>
                     </div>
+						@if(User.IsInRole(SD.Role_Employee) || User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_User_Comp) || User.IsInRole(SD.Role_User_Indi))
+						{
                     <div class="col-12 col-md-6 pb-1">
                         <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height:50px;">Add to Cart</button>
                     </div>
+                        }
                 </div>
             </div>
         </div>
