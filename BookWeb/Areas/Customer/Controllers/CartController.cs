@@ -132,7 +132,7 @@ namespace BookWeb.Areas.Customer.Controllers
             if (applicationUser.CompanyId.GetValueOrDefault() == 0)
             {
                 //stripe settings 
-                var domain = "https://localhost:7110/";
+                var domain = "https://bookwebmgr.azurewebsites.net/";
                 var options = new SessionCreateOptions
                 {
                     PaymentMethodTypes = new List<string>
