@@ -1,7 +1,7 @@
 Website for selling / buying books. You can use a test strip credit card to place an order
 
 Ready website for testing: https://bookwebmgr.azurewebsites.net/
-![image](https://user-images.githubusercontent.com/82658699/190512788-0686777b-cb63-4df5-8d01-35b74e2a5903.png)
+![image](https://user-images.githubusercontent.com/82658699/190512871-295b51b0-48c7-481d-ad5c-de7565a3c68d.png)
 
 Functionalities
 
