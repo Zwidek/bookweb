@@ -1,58 +1,55 @@
-# BookWeb
-Strona internetowa umożliwiająca sprzedaż / kupno książek. Można wykorzystać testowe strip credit card do złożenia zamówienia
+Website for selling / buying books. You can use a test strip credit card to place an order
 
-Gotowa strona do testowania: https://bookwebmgr.azurewebsites.net/
+Ready website for testing: https://bookwebmgr.azurewebsites.net/
 
-Funkcjonalności
+Functionalities
 
-•	Rejestracja przy użyciu Facebooka oraz wykorzystanie funkcji „potwierdzenia” rejestracji poprzez email 
+• Registration using Facebook and using the "confirmation" function of registration via email
 
-•	Dodawanie nowych kategorii
+• Adding new categories
 
-•	Dodawanie nowych książek
+• Adding new books
 
-•	Tworzenie nowych użytkowników z podziałem na ich uprawnienia (admin, użytkownik specjalny, pracownik, zwykły użytkownik)
+• Creating new users with the division into their permissions (admin, special user, employee, ordinary user)
 
-•	Koszyk zakupów
+• Shopping basket
 
-•	Zamówienie zakupu
+• Purchase order
 
-•	Wysyłanie emaila do klienta po zakupie
+• Sending an email to the customer after the purchase
 
-•	Walidacja danych – przy dodawaniu książek, przy rejestracji użytkownika, przy dodawaniu kategorii książek 
+• Data validation - when adding books, when registering a user, when adding book categories
 
-•	Zmiana nr telefonu
+• Change the phone number
 
-•	Płatność kartą
+• Payment by card
 
-•	Wykorzystanie gotowych bibliotek skryptowych 
+• Use of ready-made script libraries
 
-•	Implementacja na chmurze Azure
+• Implementation on the Azure cloud
 
-Będą 4 opcje użytkowników + użytkownik niezalogowany
+There will be 4 user options + user not logged in
 
-•	Admin – tworzenie użytkowników oraz wszystkie pozostałe funkcjonalności
+• Admin - creating users and all other functionalities
 
-•	Użytkownik specjalny (firma) – możliwość zakupu książek z możliwością 30 dniowym opóźnieniem płatności za zakup książki.
+• Special user (company) - the possibility of purchasing books with a 30-day delay in payment for the purchase of a book.
 
-Logowanie: company@gmail.com hasło:Test12345!
+Login: company@gmail.com password: Test12345!
 
-•	Pracownik – sprzedaż książek
+• Employee - selling books
 
-Logowanie: employee@gmail.com hasło:Test12345!
+Login: employee@gmail.com password: Test12345!
 
-•	Użytkownik zalogowany – przeglądanie książek, zakup książek
+• Logged in user - browsing books, buying books
 
-Logowanie: individual@gmail.com hasło:Test12345!
+Login: individual@gmail.com password: Test12345!
 
-•	Użytkownik niezalogowany – przeglądanie książek
+• User not logged in - browsing books
 
-Do przetestowania płatności kartą:  
+To test card payments:
 
-4242424242424242 – nr karty
+4242424242424242 - card no
 
-xxx – cvc karty
+xxx - cvc card
 
-data – aby z przyszłości
-
-
+date - to come from the future
