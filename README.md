@@ -52,4 +52,4 @@ To test card payments:
 
 xxx - cvc card
 
-date - to come from the future
+date - from future
